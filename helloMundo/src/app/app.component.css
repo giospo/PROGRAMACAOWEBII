@@ -1,0 +1,89 @@
+/*h1{
+  color: blueviolet;
+  background-color: aqua;
+}
+
+h2{
+  color: blueviolet;
+  background-color: aqua;
+}
+
+
+div{
+  color: aqua;
+  background-color: aqua;
+  width: 900px;
+  height: 600px;
+}*/
+
+
+.tudo{
+  width: 900px;
+  height: 700px;
+  background-color: brown;
+}
+
+.cabecalho{
+  width: 890px;
+  height: 100px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: blueviolet;
+}
+
+#logo{
+  width: 100px;
+  height: 90px;
+  background-color: aqua;
+
+  margin-top: -12px;
+  margin-left: 0px;
+}
+
+#dados{
+  width: 100px;
+  height: 90px;
+  background-color: aqua;
+  margin-top: -12px;
+  margin-left: 780px;
+}
+
+.corpo{
+  width: 890px;
+  height: 500px;
+  background-color: green;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+#menuh{
+  width: 765px;
+  height: 50px;
+  background-color: red;
+  margin-top: -50px;
+  margin-left: 120px;
+}
+
+#menuv{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+.rodape{
+  width: 885px;
+  height: 70px;
+  margin-left: 0px;
+  margin-top: 5px;
+  background-color: blueviolet;
+}
+
+#contatos{
+  width: 100px;
+  height: 30px;
+  background-color: aqua;
+  margin-top: 0px;
+  margin-left: 780px;
+}

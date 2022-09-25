@@ -1,0 +1,182 @@
+.tudo{
+    background-color: black;
+    height: 900px;
+    box-shadow: 0px 0px -300px 0px rgba(255, 255, 255, 1);
+}
+
+/*inicio cabeçalho*/
+
+.corpocabe{
+    background-color: black;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 300px 0px rgba(255, 255, 255, 1);
+}
+
+.titulo{
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*final cabeçalho*/
+
+
+/*inicio informações*/
+.corpoper{
+    font-size: 12px;
+    width: 400px;
+    height: 280x;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+}
+
+.info{
+    width: 440px;
+    margin: 0 auto 0;
+}
+
+.box{
+    font-size: 12px;
+    width: 395px;
+    color: white;
+}
+
+.nome{
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto 0;
+}
+
+.respnome{
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.curso{
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.respcurso {
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+
+.objetivo {
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.respobjetivo {
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.hobbie{
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.resphobbie{
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.linkedin{
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.resplinkedin{
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/90/Wbseries_linkdin.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 150px;
+    width: 300px;    
+}
+
+.resplinkedin a{
+    color: white;
+}
+
+.resplinkedin a:hover{
+	background:white;
+	color:black;
+}
+
+.github{
+    display: inline-flex;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.respgithub{
+    margin-left: 10px;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968896.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 158px;
+    width: 300px;    
+}
+
+.respgithub a{
+    color: white;
+}
+
+.respgithub a:hover{
+	background:white;
+	color:black;
+}
+
+/*final informações*/
