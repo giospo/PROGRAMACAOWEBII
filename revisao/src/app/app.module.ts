@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './template/header/header.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
-import { CadastrarProdutoComponent } from './components/produtos/cadastrar-produto/cadastrar-produto.component';
+import { GratisComponent } from './components/locais-para-visitar/gratis/gratis.component';
+import { PagosComponent } from './components/locais-para-visitar/pagos/pagos.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,8 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ListarProdutosComponent,
-    CadastrarProdutoComponent
+    GratisComponent,
+    PagosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,110 @@
+<h1>
+  <p class="text-center mt-3 text-dark">
+    AQUI VOCÊ ENCONTRA OS MELHORES LOCAIS PARA PASSEAR COM A SUA FAMÍLIA!
+  </p>
+</h1>
+
+<div class="container">
+  <h4 class="text-center mt-3 text-dark">
+    <p>Contato</p>
+    <h6>
+      <p>
+        Quer estar por dentro dos principais passeios para você e sua família?
+      </p>
+      <p>
+        Preencha o formulário abaixo e fique por dentro das novidades da cidade
+        de São Paulo por e-mail!
+      </p>
+    </h6>
+  </h4>
+  <div class="card shadow">
+    <!--Inicio do Formulário-->
+    <form class="m-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">
+              Cadastre seu e-mail abaixo, e receba promoções e novidades com
+              exclusividade.</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+              name="email"
+              [(ngModel)]="email"
+            />
+          </div>
+          <!--Fim row-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Para dúvidas e sugestões preencha o formulário abaixo:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Digite sua mensagem."
+                  rows="2"
+                  name="mensagem"
+                  [(ngModel)]="mensagem"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-outline-secondary" routerLink="/home">
+                Voltar
+              </button>
+              <button
+                class="btn btn-success float-right"
+                (click)="enviarMensagem()"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h6 class="text-center p-3 mb-2 bg-light text-dark border">
+            Deseja ser nosso Parceiro ou falar com a Assessoria de imprensa,
+            <br />
+            entre em contato pelo e-mail: contato@passeiacidadesp.com.br
+          </h6>
+        </div>
+      </div>
+    </form>
+    <!--Fim do Formulário-->
+
+    <!--Inicio do Formulário-->
+    <form class="m-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <div class="card p-2 border-0">
+              <h6>Confirme as informações digitadas:</h6>
+              <label>
+                <p class="p-2 border border-danger">E-mail: {{ email }}</p>
+              </label>
+              <label>
+                <p class="p-2 border border-danger">Mensagem: {{ mensagem }}</p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!--Fim do Formulário-->
+  </div>
+</div>
+<br />
+<br />
+<br />
