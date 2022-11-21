@@ -1,10 +1,25 @@
-<h1>Seja bem vindo ao curso de Angular!</h1>
+<h1>Seja bem vindo ao Curso de Angular!</h1>
+
+<h4 class="text-danger">{{ anuncio }}</h4>
 <div class="row">
   <div class="col">
-    <img class="img-fluid" src="assets/img/logo_horacio.png" />
+    <app-card-produto
+      [foto]="foto"
+      [nomeProduto]="nomeProduto"
+      [promocao]="promocao"
+      [idProduto]="idProduto"
+      [dataValidade]="dataValidade"
+      [precoProduto]="precoProduto"
+    ></app-card-produto>
   </div>
-  <div class="col">
-     <img class="img-fluid" src="assets/img/crud.png" />
-  </div>
+    <div class="col">
+      <app-card-produto
+        foto="https://www.blogdelfotografo.com/wp-content/uploads/2015/07/16225735024_8238b3517e_k.jpg"
+        nomeProduto="Viagem Trabja Las Línes"
+        [promocao]="true"
+        [idProduto]="10"
+        dataValidade="2022-11-30"
+        [precoProduto]="2000.00"
+      ></app-card-produto>
+    </div>
 </div>
-

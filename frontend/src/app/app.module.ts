@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
 import { CadastrarProdutoComponent } from './components/produtos/cadastrar-produto/cadastrar-produto.component';
 import { FormsModule } from '@angular/forms';
+import { share } from 'rxjs';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

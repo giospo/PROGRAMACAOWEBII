@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   idProduto: number = 123;
   precoProduto: number = 1.25;
   promocao: boolean = true;
+  foto: string = "assets/img/crud.png"
+  dataValidade = "2021-12-31"
 
   constructor() {
     /*this.anuncio = 'O' + this.nomeProduto + 'está em promoção';
