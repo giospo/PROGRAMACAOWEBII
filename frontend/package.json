@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.0.0",
+    "@angular/animations": "^14.2.12",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.0.0",
@@ -18,10 +18,13 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-    "bootstrap": "^4.6.0",
+    "@sweetalert2/ngx-sweetalert2": "^12.0.2",
+    "bootstrap": "^4.6.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.1",
+    "ngx-toastr": "^16.0.1",
     "rxjs": "~7.5.0",
+    "sweetalert2": "^11.6.14",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

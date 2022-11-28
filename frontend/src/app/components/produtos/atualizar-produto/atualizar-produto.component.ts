@@ -1,15 +1,15 @@
 import { ProdutosService } from './../../../services/produtos.service';
 import { IProduto } from './../../../model/IProduto.model';
 import { Component, OnInit } from '@angular/core';
-import { SelectControlValueAccessor } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
-  selector: 'app-cadastrar-produto',
-  templateUrl: './cadastrar-produto.component.html',
-  styleUrls: ['./cadastrar-produto.component.css']
+  selector: 'app-atualizar-produto',
+  templateUrl: './atualizar-produto.component.html',
+  styleUrls: ['./atualizar-produto.component.css']
 })
-export class CadastrarProdutoComponent implements OnInit {
+export class AtualizarProdutoComponent implements OnInit {
 
   produto: IProduto = {
     nome: '',
@@ -23,17 +23,24 @@ export class CadastrarProdutoComponent implements OnInit {
   preco: number = 0;
   */
 
-  constructor(private produtosService: ProdutosService, private router: Router) { }
+  constructor(
+    private produtosService: ProdutosService,
+    private router: Router,
+    private activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const id = Number(this.activateRoute.snapshot.paramMap.get('id'));
+    this.produtosService.buscarPorId(id).subscribe(retorno => {
+      this.produto = retorno;
+    });
   }
 
   salvarProduto(): void {
-    this.produtosService.cadastrar(this.produto).subscribe(retorno => {
+    this.produtosService.atualizar(this.produto).subscribe(retorno => {
       this.produto = retorno;
       this.produtosService.exibirMensagem(
         'Sistema',
-        `${this.produto.nome} foi cadastrado com sucesso. ID: ${this.produto.id}`,
+        `${this.produto.nome} foi atualizado com sucesso.`,
         'toast-success'
       );
 
@@ -43,8 +50,7 @@ export class CadastrarProdutoComponent implements OnInit {
       console.log('Preço: ', this.preco);
       alert('Salvo com sucesso!')
       */
-
+      this.router.navigate(['/produtos']);
     });
-    this.router.navigate(['/produto']);
   }
 }

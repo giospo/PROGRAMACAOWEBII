@@ -4,15 +4,13 @@
       "id": 1,
       "nome": "Curso de Angular",
       "validade": "2021-12-31",
-      "precoProduto": 550.54
+      "precoProduto": 600
     },
-
     {
-      "id": 2,
-      "nome": "Curso de Java",
+      "nome": "Curso Ionic",
       "validade": "2021-12-31",
-      "precoProduto": 1050.54
+      "precoProduto": 253.12,
+      "id": 3
     }
   ]
 }
-

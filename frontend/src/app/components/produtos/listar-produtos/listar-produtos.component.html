@@ -27,10 +27,23 @@
         <td>{{ prod.validade | date: "shortDate" }}</td>
         <td>{{ prod.precoProduto | currency: "BRL" }}</td>
         <td>
-          <button class="btn btn-warning">
+          <button
+            class="btn btn-warning"
+            routerLink="/produtos/atualizar/{{ prod.id }}"
+          >
             <i class="fa fa-pencil" aria-hidden="true"></i>
           </button>
-          <button class="btn btn-danger ml-2">
+          <button
+            class="btn btn-danger ml-2"
+            [swal]="{
+              title: 'ATENÇÃO!!!',
+              text: 'Deseja realmente excluir o produto: ' + prod.nome + '?',
+              showDenyButton: true,
+              denyButtonText: 'Não',
+              icon: 'warning'
+            }"
+            (confirm)="deletar(prod)"
+          >
             <i class="fa fa-trash-o" aria-hidden="true"></i>
           </button>
         </td>
